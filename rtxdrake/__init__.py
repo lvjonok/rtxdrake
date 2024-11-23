@@ -1,2 +1,1 @@
-from .geom import Geom
-from .link import Link
+from .render import do_work
