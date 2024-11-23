@@ -31,7 +31,7 @@ class RenderManager:
         self.listener = Listener(self.load_handler, self.draw_handler)
 
         # Set a low timeout to ensure rapid message handling, minimizing perceived delays.
-        self.timeout = 1e-4  # 0.0001 seconds
+        self.timeout = 1e-6
 
     def load_handler(self, msg: lcmt_viewer_load_robot):
         """
